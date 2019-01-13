@@ -1,0 +1,13 @@
+version: '3'
+services:
+  whoami:
+    image: jwilder/whoami
+    environment:
+      - VIRTUAL_HOST=whoami2.uhisoft.ddns.net
+    ports:
+      - 8098:8000
+    networks:
+      - proxy
+networks:
+  proxy:
+    external: true
