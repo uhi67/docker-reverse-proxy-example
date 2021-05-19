@@ -68,3 +68,6 @@ networks:
   proxy:
     external: true
 ```
+
+If the application stack has other containers, e.g. 'db', it also have to connected to the network 'proxy' 
+or an other common network with the main application container.
