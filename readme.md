@@ -25,7 +25,7 @@ The key to the solution is a common network you have to define in the _Networks_
 
 The corresponding docker command is (not tested):
 
-    docker network create --driver overlay --subnet=10.0.0.0/24 --gateway=10.0.0.1 proxy
+    docker network create --driver overlay --attachable proxy
 
 ## The proxy stack
 
