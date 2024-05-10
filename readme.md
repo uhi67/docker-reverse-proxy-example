@@ -63,8 +63,10 @@ services:
     ports:
       - 8098:8000
     networks:
-      - proxy
+      - app     # if more than one container exists, must be added to all containers
+      - proxy   # add only to the web container
 networks:
+  app:
   proxy:
     external: true
 ```
